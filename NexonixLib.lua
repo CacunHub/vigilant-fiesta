@@ -196,18 +196,18 @@ do
 
     local Themes = {
         ["Preset"] = {
-            ["Background"] = Color3.fromRGB(24, 26, 30),
-            ["Inline"] = Color3.fromRGB(29, 30, 36),
-            ["Accent"] = Color3.fromRGB(78, 95, 255),
-            ["Tab"] = Color3.fromRGB(34, 37, 57),
-            ["Dark Icon"] = Color3.fromRGB(64, 64, 73),
-            ["Element"] = Color3.fromRGB(38, 38, 50),
-            ["Liner"] = Color3.fromRGB(39, 39, 46),
-            ["Outline"] = Color3.fromRGB(47, 49, 53),
-            ["Dark Text"] = Color3.fromRGB(108, 109, 116),
-            ["Text"] = Color3.fromRGB(255, 255, 255),
-            ["Toggle"] = Color3.fromRGB(57, 59, 75),
-            ["Hovered Element"] = Color3.fromRGB(46, 46, 54)
+            ["Background"] = Color3.fromRGB(16, 16, 16),
+            ["Inline"] = Color3.fromRGB(23, 23, 24),
+            ["Accent"] = Color3.fromRGB(0, 184, 255),
+            ["Tab"] = Color3.fromRGB(33, 33, 35),
+            ["Dark Icon"] = Color3.fromRGB(104, 104, 110),
+            ["Element"] = Color3.fromRGB(33, 33, 35),
+            ["Liner"] = Color3.fromRGB(32, 32, 34),
+            ["Outline"] = Color3.fromRGB(40, 40, 43),
+            ["Dark Text"] = Color3.fromRGB(150, 150, 155),
+            ["Text"] = Color3.fromRGB(240, 240, 240),
+            ["Toggle"] = Color3.fromRGB(72, 72, 78),
+            ["Hovered Element"] = Color3.fromRGB(42, 42, 45)
         }
     }
 
@@ -899,7 +899,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["ColorpickerWindow"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Palette"] = Library:Create("TextButton", {
@@ -919,7 +919,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Palette"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Saturation"] = Library:Create("Frame", {
@@ -942,7 +942,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Saturation"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Value"] = Library:Create("Frame", {
@@ -966,7 +966,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Value"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["PaletteDragger"] = Library:Create("Frame", {
@@ -1447,7 +1447,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["KeybindWindow"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Library:Create("UIPadding", {
@@ -1482,7 +1482,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["KeyButton"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Icon"] = Library:Create("ImageLabel", {
@@ -1543,7 +1543,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Hold"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Toggle"] = Library:Create("TextButton", {
@@ -1562,7 +1562,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Toggle"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })                
 
                 Items["Toggle"]:OnHover(function()
@@ -2057,7 +2057,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Watermark"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Library:Create("UIPadding", {
@@ -2511,7 +2511,16 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["MainFrame"].Instance,
-                    CornerRadius = UDim.new(0, 14)
+                    CornerRadius = UDim.new(0, 16)
+                })
+
+                Library:Create("UIStroke", {
+                    Name = "\0",
+                    Parent = Items["MainFrame"].Instance,
+                    ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                    Color = Color3.new(1, 1, 1),
+                    Transparency = 0.92,
+                    Thickness = 1
                 })
                 
                 Items["Side"] = Library:Create("Frame", {
@@ -2527,7 +2536,16 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Side"].Instance,
-                    CornerRadius = UDim.new(0, 18)
+                    CornerRadius = UDim.new(0, 16)
+                })
+
+                Library:Create("UIStroke", {
+                    Name = "\0",
+                    Parent = Items["Side"].Instance,
+                    ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                    Color = Color3.new(1, 1, 1),
+                    Transparency = 0.95,
+                    Thickness = 1
                 })
                 
                 Items["_Avatar"] = Library:Create("Frame", {
@@ -2970,7 +2988,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = SettingsItems["SettingsWindow"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 SettingsItems["Content"] = Library:Create("ScrollingFrame", {
@@ -3108,7 +3126,7 @@ do
                     Library:Create("UICorner", {
                         Name = "\0",
                         Parent = NewTab.Items["Inactive"].Instance,
-                        CornerRadius = UDim.new(0, 6)
+                        CornerRadius = UDim.new(0, 8)
                     })                    
 
                     NewTab.Items["Content"] = Library:Create("ScrollingFrame", {
@@ -3384,8 +3402,8 @@ do
                     BackgroundTransparency = 1,
                     Size = UDim2.new(0, 41, 0, 45),
                     BorderSizePixel = 0,
-                    BackgroundColor3 = Library.Theme["Accent"]
-                }):AddToTheme({BackgroundColor3 = 'Accent'})
+                    BackgroundColor3 = Library.Theme["Outline"]
+                }):AddToTheme({BackgroundColor3 = 'Outline'})
                 
                 Library:Create("UICorner", {
                     Name = "\0",
@@ -3678,20 +3696,21 @@ do
                 Items["Text"] = Library:Create("TextLabel", {
                     Name = "\0",
                     FontFace = Library.Font,
-                    TextSize = Library.FontSize + 2,
+                    TextSize = Library.FontSize - 4,
                     Parent = Items["Section"].Instance,
-                    TextColor3 = Library.Theme["Text"],
-                    Text = Section.Name,
+                    TextColor3 = Library.Theme["Dark Text"],
+                    Text = string.upper(Section.Name),
                     BackgroundTransparency = 1,
+                    Position = UDim2.new(0, 3, 0, 0),
                     BorderSizePixel = 0,
                     AutomaticSize = Enum.AutomaticSize.XY
-                }):AddToTheme({TextColor3 = 'Text'})
+                }):AddToTheme({TextColor3 = 'Dark Text'})
                 
                 Items["Background"] = Library:Create("Frame", {
                     Name = "\0",
                     Parent = Items["Section"].Instance,
                     Size = UDim2.new(1, 0, 0, 25),
-                    Position = UDim2.new(0, 0, 0, 30),
+                    Position = UDim2.new(0, 0, 0, 24),
                     BorderSizePixel = 0,
                     AutomaticSize = Enum.AutomaticSize.Y,
                     BackgroundColor3 = Library.Theme["Inline"]
@@ -3700,7 +3719,16 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Background"].Instance,
-                    CornerRadius = UDim.new(0, 12)
+                    CornerRadius = UDim.new(0, 10)
+                })
+
+                Library:Create("UIStroke", {
+                    Name = "\0",
+                    Parent = Items["Background"].Instance,
+                    ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                    Color = Color3.new(1, 1, 1),
+                    Transparency = 0.95,
+                    Thickness = 1
                 })
                 
                 Items["Content"] = Library:Create("Frame", {
@@ -4200,7 +4228,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["RealButton"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Text"] = Library:Create("TextLabel", {
@@ -4871,7 +4899,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["RealDropdown"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Value"] = Library:Create("TextLabel", {
@@ -5459,7 +5487,7 @@ do
                 Library:Create("UICorner", {
                     Name = "\0",
                     Parent = Items["Background"].Instance,
-                    CornerRadius = UDim.new(0, 6)
+                    CornerRadius = UDim.new(0, 8)
                 })
                 
                 Items["Input"] = Library:Create("TextBox", {
